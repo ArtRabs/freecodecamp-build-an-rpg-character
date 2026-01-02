@@ -2,6 +2,9 @@ full_dot = '●'
 empty_dot = '○'
 
 # 1. You should have a function named create_character.
+def create_character(character_name, strength, intelligence, charisma):
+
+    return
 
 # 2. When create_character is called with a first argument that is not a string it should return The character name should be a string.
 

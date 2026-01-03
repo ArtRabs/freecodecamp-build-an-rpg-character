@@ -12,7 +12,10 @@ def create_character(character_name, strength, intelligence, charisma):
         return "The character name should be a string"
 
 # 3. When create_character is called with a first argument that is an empty string, it should return The character should have a name.
-    
+    if not character_name:
+
+        return "The character should have a name"
+
 # 4. When create_character is called with a first argument that is longer than 10 characters it should return The character name is too long.
 
 # 5. The create_character function should not say that the character is too long when it's not longer than 10 characters.

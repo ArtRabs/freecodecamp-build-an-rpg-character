@@ -23,6 +23,9 @@ def create_character(character_name, strength, intelligence, charisma):
         return "The character name is too long"
 
 # 6. When create_character is called with a first argument that contains a space it should return The character name should not contain spaces.
+    if " " in character_name:
+
+        return "The character name should not contain spaces"
 
 # 7. When create_character is called with a second, third or fourth argument that is not an integer it should return All stats should be integers.
 

@@ -17,9 +17,11 @@ def create_character(character_name, strength, intelligence, charisma):
         return "The character should have a name"
 
 # 4. When create_character is called with a first argument that is longer than 10 characters it should return The character name is too long.
-
 # 5. The create_character function should not say that the character is too long when it's not longer than 10 characters.
-    
+    if len(character_name) > 10:    
+
+        return "The character name is too long"
+
 # 6. When create_character is called with a first argument that contains a space it should return The character name should not contain spaces.
 
 # 7. When create_character is called with a second, third or fourth argument that is not an integer it should return All stats should be integers.

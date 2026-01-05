@@ -27,7 +27,12 @@ def create_character(character_name, strength, intelligence, charisma):
 
         return "The character name should not contain spaces"
 
+    # Character Stats
+
 # 7. When create_character is called with a second, third or fourth argument that is not an integer it should return All stats should be integers.
+    if not (isinstance(strength, int) and isinstance(intelligence, int) and isinstance(charisma, int)):
+        
+        return "All stats should be integers"
 
 # 8. When create_character is called with a second, third or fourth argument that is lower than 1 it should return All stats should be no less than 1.
 

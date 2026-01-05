@@ -35,6 +35,9 @@ def create_character(character_name, strength, intelligence, charisma):
         return "All stats should be integers"
 
 # 8. When create_character is called with a second, third or fourth argument that is lower than 1 it should return All stats should be no less than 1.
+    if strength < 1 or intelligence < 1 or charisma < 1:
+
+        return "All stats should be no less than 1"
 
 # 9. When create_character is called with a second, third or fourth argument that is higher than 4 it should return All stats should be no more than 4.
 

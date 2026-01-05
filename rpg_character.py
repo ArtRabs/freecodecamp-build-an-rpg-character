@@ -40,6 +40,9 @@ def create_character(character_name, strength, intelligence, charisma):
         return "All stats should be no less than 1"
 
 # 9. When create_character is called with a second, third or fourth argument that is higher than 4 it should return All stats should be no more than 4.
+    if strength > 4 or intelligence > 4 or charisma > 4:
+
+        return "All stats should be no more than 4"
 
 # 10. When create_character is called with a second, third or fourth argument that do not sum to 7 it should return The character should start with 7 points.
 

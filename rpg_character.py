@@ -50,5 +50,8 @@ def create_character(character_name, strength, intelligence, charisma):
         return "The character should start with 7 points"
 
 # 11. create_character('ren', 4, 2, 1) should return ren\nSTR ●●●●○○○○○○\nINT ●●○○○○○○○○\nCHA ●○○○○○○○○○.
+    character = f"{character_name}\nSTR {(strength * full_dot) + ((10 - strength) * empty_dot)}\nINT {(intelligence * full_dot) + ((10 - intelligence) * empty_dot)}\nCHA {(charisma * full_dot) + ((10 - charisma) * empty_dot)}"
+
+    return character
 
 # 12. When create_character is called with valid values it should output the character stats as required.

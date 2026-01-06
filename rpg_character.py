@@ -55,3 +55,4 @@ def create_character(character_name, strength, intelligence, charisma):
     return character
 
 # 12. When create_character is called with valid values it should output the character stats as required.
+print(create_character("ren", 4, 2, 1))
